@@ -5,15 +5,15 @@ phases:
     runtime-versions:
       nodejs: 10
     commands:
-      #echo Installing Mocha...
-      #npm install -g mocha
+      echo Installing Mocha...
+      npm install -g mocha
         - echo Installing source NPM dependencies...
         - npm install
 
-  #pre_build:
-    #commands:
-      #- echo Installing source NPM dependencies...
-      #- npm install
+  pre_build:
+    commands:
+      - echo Installing source NPM dependencies...
+      - npm install
   build:
     commands:
       - echo Build started on `date`
